@@ -1,4 +1,4 @@
-ORGLIST=`cf orgs`
+ORGLIST=`cf orgs|tail +4`
 # echo $ORGLIST
 for i in $ORGLIST;
 	do {

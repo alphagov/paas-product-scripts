@@ -34,4 +34,4 @@ Report that works through every org and space, getting the apps and services for
 Output will contain org admin names for every service on PaaS, so be **Very** careful with data at rest, and don't accidentally commit this report back to GitHub!!!!
 
 ### userlist.sh
-An early version of servicelist.sh. Needs a bit of fixing up still.
+An early version of servicelist.sh. Just lists out the people to contact, not any of the apps. Again, be careful with data at rest!
