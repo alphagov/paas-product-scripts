@@ -4,6 +4,6 @@ set -e pipefail
 
 read -p 'Enter Org GUID: ' ORGGUID
 
-cf curl /v2/spaces/$ORGGUID
+cf curl /v2/organizations/$ORGGUID
 
 
