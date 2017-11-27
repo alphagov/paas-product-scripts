@@ -28,6 +28,9 @@ Go on, guess.
 ### listnondefaultquotas.sh
 A report that will pull out all organisations that aren't in "trial" mode.
 
+### old-trial-orgs.sh
+Orgs over three months old that are still on the trial plan
+
 ### servicelist.sh
 Report that works through every org and space, getting the apps and services for each.
 
@@ -35,3 +38,22 @@ Output will contain org admin names for every service on PaaS, so be **Very** ca
 
 ### userlist.sh
 An early version of servicelist.sh. Just lists out the people to contact, not any of the apps. Again, be careful with data at rest!
+
+## Other plugins
+GOV.UK PaaS also has a few handy plugins installed
+
+### usage-report
+From https://github.com/krujos/usagereport-plugin
+
+Lists out what % of memory quota each space is using, in org order.
+
+``cf usage-report``
+
+Note - this currently crashes because some of our users don't have a username set.
+
+### service-use
+From https://github.com/cdelashmutt-pivotal/service-use
+
+Report of all current service instances, with org and space, grouped by plan within service.
+
+``cf service-use``
